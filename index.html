@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishan's Gym</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('Img/img1.webp') no-repeat fixed center;
+
+        background-size: cover;
+        height: 700px;
+        font-family: 'Ranchers', cursive;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 40px;
+        top: 7px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .left div {
+        line-height: 0px;
+    }
+
+    .left img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .mid {
+        display: block;
+        width: 66%;
+        margin: 20px auto;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 34px;
+    }
+
+    .btn2{
+        background-color: black;
+        color: white;
+        padding: 1px 7px;
+        border: 8px red;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: 'Kumbh Sans', sans-serif
+    }
+
+    .btn2:hover{
+        background-color: grey;
+    }
+    .btn {
+        background-color: black;
+        color: white;
+        padding: 1px 7px;
+        border: 8px red;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: 'Kumbh Sans', sans-serif;
+
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+    button.btn:hover{
+        animation-name: ishan;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes ishan{
+        from{
+            width: 60px;
+        }
+        to{
+            width: 150px;
+        }
+    }
+
+    .navbar {
+        display: inline-block;
+        padding: 14px;
+        background-color: rgb(193, 53, 53); 
+        height: 23px;
+        text-align: center;
+        margin: 13px;
+        margin-left: 168px;
+        border-radius: 4px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 19px;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 47px;
+
+
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: red;
+    }
+
+    .container {
+        height: 464px;
+        width: 867px;
+        margin: 55px 360px;
+        padding: 4px 4px;
+        border-radius: 10px;
+        text-align: center;
+        left: 50px;
+        color: black;
+        border: 4px solid rgb(255, 255, 255);
+        font-size: 1.8rem;
+    }
+
+    .form input {
+        padding: 2px 2px;
+        margin: 13px 99px;
+        font-family: 'Kumbh Sans', sans-serif;
+    }
+    .form group{
+        padding: 12px;
+    }
+</style>
+
+<body>
+    <div class="left">
+        <img src="img/logo.png" alt="logo">
+        <div>Ishan Fitness</div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <button class="btn2">Call us</button>
+        <button class="btn2">Email us</button>
+    </div>
+    <div class="container">
+        <h1>Welcome to the muscle gang!</h1>
+        <form action="noaction.php">
+            <div class="form group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <div class="form group">
+                <input type="text" name="" placeholder="Enter your contact no.">
+            </div>
+            <div class="form group">
+                <input type="text" name="" placeholder="Enter your email id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
